@@ -21,6 +21,7 @@ const bankDetailsSchema = new mongoose.Schema({
     accountHolderName:{
         type:String,
         required:true,
+        lowercase:true,
         minlength:2,
         maxlength:25,
     },
